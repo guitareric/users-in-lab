@@ -1,11 +1,10 @@
-import logo from './logo.svg'
-import './App.css'
+import MainPage from './pages/Main/index'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
-    </div>
+    <>
+      <MainPage />
+    </>
   )
 }
 
