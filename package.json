@@ -1,0 +1,20 @@
+{
+  "name": "users-in-lab",
+  "version": "1.0.0",
+  "description": "dynamic react app that displays a page showing users and staff in lab. Users can be removed with the password \"cleanroom\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guitareric/users-in-lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guitareric/users-in-lab/issues"
+  },
+  "homepage": "https://github.com/guitareric/users-in-lab#readme"
+}
