@@ -1,5 +1,6 @@
 import React from 'react'
+import Header from './Header'
 
 export default function Table2() {
-  return <div className="text-white">Table 2</div>
+  return <Header title='prototyping lab' size ='md'/>
 }

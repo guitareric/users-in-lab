@@ -1,7 +1,10 @@
 import React from 'react'
+import Header from './Header'
 
 export default function Table1() {
   return (
+    <>
+    <Header title='cleanroom' size='sm'/>
     <table className="table table-hover table-dark">
       <thead>
         <tr>
@@ -30,6 +33,6 @@ export default function Table1() {
           <td>@twitter</td>
         </tr>
       </tbody>
-    </table>
+    </table></>
   )
 }
