@@ -12,4 +12,13 @@ code {
     monospace;
 }
 
+.mytable>tbody>tr>td, .mytable>tbody>tr>th, .mytable>tfoot>tr>td, .mytable>tfoot>tr>th, .mytable>thead>tr>td, .mytable>thead>tr>th {
+  padding: 0;
+}
+
+.myheading{
+  display: flex;
+  justify-content: center;
+}
+
 
