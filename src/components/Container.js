@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Container(props) {
   return (
-    <div className="container-fluid bg-dark" style={{ minHeight: '100vh' }}>
+    <div className="bg-dark text-white" style={{ minHeight: '100vh' }}>
       {props.children}
     </div>
   )
