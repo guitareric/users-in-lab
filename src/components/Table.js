@@ -3,12 +3,12 @@ import { usersInLab } from '../../src/data/mockData'
 
 export default function Table(props) {
   const title = props.title
-  let userInLab = usersInLab.map(element => <UserList name={element.name} time={element.time} location={element.location} title={title} />)
+  let userInLab = usersInLab.map(element => <UserList name={element.name} time={element.time} location={element.location} title={title} usersInLab={usersInLab} />)
 
   return (
     <>
-      <h2 className="text-uppercase text-center">{title}</h2>
-      <table className="table-sm table-hover table-dark">
+      <h2 className="text-uppercase text-center text-danger">{title}</h2>
+      <table className="table table-striped table-hover table-dark">
         <tbody>{userInLab}</tbody>
       </table>
     </>
@@ -20,6 +20,8 @@ function UserList(props) {
   const time = props.time
   const location = props.location
   const title = props.title
+  const usersInLab = props.usersInLab
+  const usersInLocation = usersInLab.length
   let className = 'text-capitalize font-weight-bold'
   if (location === title) {
     if (
@@ -30,7 +32,7 @@ function UserList(props) {
       (name.toLowerCase() === 'andrew hurlbut') |
       (name.toLowerCase() === 'brian baker')
     ) {
-      className = 'text-capitalize font-weight-bold text-warning'
+      className = 'text-capitalize font-weight-bold text-success'
     }
     return (
       <>
