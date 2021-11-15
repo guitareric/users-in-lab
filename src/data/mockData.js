@@ -23,6 +23,13 @@ export const usersInLab = [
   { name: 'Chriss Pratt', time: '10:12 AM', location: 'cleanroom' },
 
   { name: 'Kamaru Usman', time: '10:12 AM', location: 'cleanroom' },
+  { name: 'Kamaru Usman', time: '10:12 AM', location: 'cleanroom' },
+  { name: 'Kamaru Usman', time: '10:12 AM', location: 'cleanroom' },
+  { name: 'Kamaru Usman', time: '10:12 AM', location: 'cleanroom' },
+  { name: 'Kamaru Usman', time: '10:12 AM', location: 'cleanroom' },
+  { name: 'Kamaru Usman', time: '10:12 AM', location: 'cleanroom' },
+  { name: 'Kamaru Usman', time: '10:12 AM', location: 'cleanroom' },
+  { name: 'Kamaru Usman', time: '10:12 AM', location: 'cleanroom' },
   { name: 'Israel Adesayna', time: '10:12 AM', location: 'cleanroom' },
   { name: 'Brock Lesnar', time: '10:12 AM', location: 'cleanroom' },
   { name: 'Fedor Emelienako', time: '10:12 AM', location: 'cleanroom' },

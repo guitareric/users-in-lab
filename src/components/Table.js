@@ -50,7 +50,9 @@ function UserList(props) {
   const time = props.time
   const location = props.location
   const title = props.title
+  const usersInLab = props.usersInLab
   let className = 'text-capitalize font-weight-bold'
+  const numberOfPeopleInCleanroom = usersInLab.filter(a => a.location.toLowerCase() === 'cleanroom').length
 
   if (location === title) {
     if (
@@ -63,17 +65,45 @@ function UserList(props) {
     ) {
       className = 'text-capitalize font-weight-bold text-success'
     }
-    return (
-      <>
-        <tr>
-          <td className={className}>
-            <h6>
-              {name} {time}
-            </h6>
-          </td>
-        </tr>
-      </>
-    )
+    if (numberOfPeopleInCleanroom <= 14) {
+      return (
+        <>
+          <tr>
+            <td className={className}>
+              <h3>
+                {name} {time}
+              </h3>
+            </td>
+          </tr>
+        </>
+      )
+    }
+    if (numberOfPeopleInCleanroom > 14 && numberOfPeopleInCleanroom <= 17) {
+      return (
+        <>
+          <tr>
+            <td className={className}>
+              <h5>
+                {name} {time}
+              </h5>
+            </td>
+          </tr>
+        </>
+      )
+    }
+    if (numberOfPeopleInCleanroom > 17) {
+      return (
+        <>
+          <tr>
+            <td className={className}>
+              <h6>
+                {name} {time}
+              </h6>
+            </td>
+          </tr>
+        </>
+      )
+    }
   }
   return null
 }
